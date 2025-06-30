@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/login.css" />
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form onsubmit="handleRegister(event)">
+        <h1>Create Account</h1>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" id="registerEmail" />
+        <input type="password" placeholder="Password" id="registerPassword" />
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <div class="form-container sign-in-container">
+      <form onsubmit="handleLogin(event)">
+        <h1>Sign in</h1>
+        <input type="email" placeholder="Email" id="loginEmail" />
+        <input type="password" placeholder="Password" id="loginPassword" />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>Already have an account?</p>
+          <button class="ghost" id="signIn">Login</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>New here? Register now</p>
+          <button class="ghost" id="signUp">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="../js/login.js"></script>
+</body>
+</html>

@@ -2,7 +2,8 @@
 import { initializeApp } from "firebase/app";
 
 // Import styles (optional)
-import './style.css';
+import './css/login.css';
+
 
 // ✅ Your Firebase config
 const firebaseConfig = {
